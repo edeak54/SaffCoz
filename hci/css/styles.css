@@ -1,6 +1,11 @@
 .logo img {
   max-height: 100px; 
   margin-left: 20px;
+  transition: filter 0.3s ease;
+}
+
+.logo img:hover {
+  filter: contrast(0%);
 }
 
 body {
@@ -32,28 +37,33 @@ header {
 
 .nav-links a {
   text-decoration: none;
-  color: #4e4e4e;
+  color: #343434;
   font-weight: bold;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f7f5f5;
 }
 
 .full-page-image {
   position: relative;
   width: 100%;
   height: 100vh; 
-  background-image: url('../assets/E-SHOP-ID-HP-BANNER-PC-1920x650-HERO-2x-\(1\)-1.webp'); 
-  background-size: cover; 
-  background-position: center center; 
-  background-repeat: no-repeat;
-  filter:brightness(80%);
+}
+
+.full-page-image .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Make sure the image covers the area */
+  filter: brightness(80%); /* Darken the image */
 }
 
 .full-page-image h1 {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%); 
+  left: 50%translate(-50%, -50%); 
   color: white;
   font-size: 3rem;
   font-weight: bold;
@@ -128,4 +138,22 @@ footer {
   text-align: center;
   padding: 1rem;
   background-color: #f4f4f4;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ee4b3f; /* Button color */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px; /* Rounded corners */
+  text-align: center;
+  margin-top: 20px; /* Space above the button */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn:hover {
+  background-color: #cb3e33; /* Darker shade on hover */
 }
