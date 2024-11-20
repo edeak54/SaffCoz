@@ -1,0 +1,222 @@
+.logo img {
+  max-height: 100px; 
+  margin-left: 20px;
+  transition: filter 0.3s ease;
+}
+
+.logo img:hover {
+  filter: contrast(0%);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+  
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+  margin-right: 150px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #343434;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f7f5f5;
+}
+
+.full-page-image {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  background-size: cover;
+
+}
+
+.full-page-image .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  filter: brightness(80%); 
+}
+
+.full-page-image h1 {
+  position: absolute;
+  top: 0;
+  left: 50%translate(-50%, -50%); 
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.full-page-image .banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; 
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+}
+
+.full-page-image .small-text {
+  font-size: 1.2rem;
+  font-weight: 500; 
+  letter-spacing: 1px; 
+  margin-bottom: -50px; 
+}
+
+.full-page-image .title-text {
+  font-size: 3rem; 
+  font-weight: bold;
+  margin-bottom: 10px; 
+}
+
+.full-page-image .description {
+  font-size: 1.5rem; 
+  font-weight: 400; 
+  line-height: 1.6; 
+  max-width: 600px; 
+  margin: 0 auto; 
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+}
+
+.best-sellers {
+  padding: 0;
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  filter: brightness(80%); 
+  background-image: url('../assets/rose-fore2.webp');
+  background-position: center;
+  padding-top: 5%;
+  padding-bottom: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  height: auto;
+  z-index: 1;
+  margin-top: -50px;
+  background:var(url('../assets/rose-fore2.webp')) center/cover;
+  -webkit-mask:linear-gradient(transparent ,#fff 50px calc(100% - 50px),transparent);
+          mask:linear-gradient(transparent ,#fff 50px calc(100% - 50px),transparent);
+  
+}
+
+.best-sellers h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #343434;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  padding: 1rem;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 30px 20px rgba(255, 255, 255, 0.521);
+  border-radius: 25px;
+  backdrop-filter: blur(4px);
+  transform: scale(1);
+
+  transition: backdrop-filter 0.3s ease, box-shadow 3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  box-shadow: 0 0 60px 60px rgb(255, 255, 255);
+  transform: scale(1.05);
+  backdrop-filter: blur(10px);
+}
+
+
+
+.product-card h3, p {
+  color: white; 
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+}
+
+.product-card h3 {
+  font-size: 24px;
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 5px;
+  padding-right: 100%;
+}
+
+.discount-sticker {
+  position: absolute; 
+  top: 10px;
+  left: 10px;
+  background-color: #ee4b3f;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f4f4f4;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ee4b3f; 
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px; 
+  text-align: center;
+  margin-top: 20px; 
+  transition: background-color 0.3s ease; 
+}
+
+#feat {
+  padding: 0;
+  background:var(url('../assets/pngtree-elegant-perfume-bottle-surrounded-by-fresh-flowers-luxurious-fragrance-display-with-image_16493619.jpg')) center/cover;
+  -webkit-mask:linear-gradient(transparent ,#fff 50px calc(100% - 50px),transparent);
+          mask:linear-gradient(transparent ,#fff 50px calc(100% - 50px),transparent);
+}
+
+.btn:hover {
+  background-color: #cb3e33; 
+}
