@@ -1,3 +1,4 @@
+
 .logo img {
   max-height: 100px; 
   margin-left: 20px;
@@ -12,19 +13,21 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  padding-top: 0px;
 }
   
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
+  padding: 0 20px;
   backdrop-filter: blur(10px);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
+  box-sizing: border-box;
 }
 
 
@@ -85,14 +88,17 @@ header {
 .full-page-image .small-text {
   font-size: 1.2rem;
   font-weight: 500; 
-  letter-spacing: 1px; 
-  margin-bottom: -50px; 
+  letter-spacing: 1px;
+  margin-top: 10px;
+  padding-bottom: 10px; 
+  margin-bottom: 0px;
 }
 
 .full-page-image .title-text {
   font-size: 3rem; 
   font-weight: bold;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .full-page-image .description {
@@ -174,6 +180,7 @@ header {
   max-width: 100%;
   border-radius: 5px;
   padding-right: 100%;
+  padding: 0;
 }
 
 .discount-sticker {
@@ -190,12 +197,6 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #f4f4f4;
-}
-
 .btn {
   display: inline-block;
   padding: 12px 24px;
@@ -208,15 +209,235 @@ footer {
   text-align: center;
   margin-top: 20px; 
   transition: background-color 0.3s ease; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.btn:hover {
+  background-color: #cb3e33; 
 }
 
 #feat {
+  margin-top: -30px;
   padding: 0;
   background:var(url('../assets/pngtree-elegant-perfume-bottle-surrounded-by-fresh-flowers-luxurious-fragrance-display-with-image_16493619.jpg')) center/cover;
   -webkit-mask:linear-gradient(transparent ,#fff 50px calc(100% - 50px),transparent);
           mask:linear-gradient(transparent ,#fff 50px calc(100% - 50px),transparent);
 }
 
-.btn:hover {
-  background-color: #cb3e33; 
+
+#feat .btn {
+  background-color: #f095ce;
+}
+
+#feat .btn:hover {
+  background-color: #a11d70;
+}
+
+
+.footer {
+  background-color: white;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; 
+}
+
+.footer-logo img {
+  max-height: 80px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-socials a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-socials a img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.footer-text p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #363636;
+}
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1 rem;
+  }
+
+  body {
+    padding-top: 100px;
+  }
+
+  .logo img {
+    max-height: 60px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 0;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+  .full-page-image {
+    height: 80vh;
+  }
+
+  .full-page-image .banner-text {
+    padding: 0 10px;
+  }
+
+  .full-page-image .small-text {
+    font-size: 0.9rem;
+  }
+
+  .full-page-image .title-text {
+    font-size: 1.5rem;
+  }
+
+  .full-page-image .description {
+    font-size: 0.9rem;
+  }
+
+  .full-page-image .btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .best-sellers h2 {
+    font-size: 1.5rem;
+  }
+
+  .products {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .product-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .product-card img {
+    max-width: 100%;
+  }
+
+  #feat {
+    margin-top: 20px;
+  }
+
+  #feat .banner-text {
+    padding: 0 10px;
+  }
+
+  #feat .small-text {
+    font-size: 0.9rem;
+  }
+
+  #feat .title-text {
+    font-size: 1.5rem;
+  }
+
+  #feat .description {
+    font-size: 0.9rem;
+  }
+
+  #feat .btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .product-card {
+    width: calc(50% - 20px);
+  }
+
+  .product-collection h2 {
+    font-size: 1.8rem;
+  }
+
+  .product-collection p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+
+  body{
+    padding-top: 200px;
+  }
+
+  .full-page-image {
+    height: 70vh;
+  }
+
+  .full-page-image .title-text {
+    font-size: 1.2rem;
+  }
+
+  .full-page-image .description {
+    font-size: 0.8rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .products {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .product-card {
+    width: 95%;
+  }
+
+  .product-card {
+    width: calc(100% - 20px);
+  }
+
+  .product-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .product-card p {
+    font-size: 0.9rem;
+  }
+
+  .product-card .btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  .product-collection h2 {
+    font-size: 1.5rem;
+  }
+
+  .product-collection p {
+    font-size: 0.8rem;
+  }
 }

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SaffCoZ - Home</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>SaffCoZ - Contact Us</title>
+  <link rel="stylesheet" href="css/styles-contact.css">
 </head>
 <body>
  
@@ -15,48 +15,81 @@
       </a>
     </div>
     <nav>
-      <ul class="nav-links">  
+      <ul class="nav-links">
+        <li><a href="homePage.html">Home</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="aboutUs.html">About Us</a></li>
-        <li><a href="storeLocation.html">Store Locations</a></li>
+        <li><a href="storeLocation.html">Stores</a></li>
         <li><a href="contactUs.html">Contact Us</a></li>
       </ul>
     </nav>
   </header>
   
+  <div class="contact-container">
+    <h1>Contact Us</h1>
+    <form id="contactForm">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+      <div class="error" id="nameError"></div>
 
-  <main>
-    <section class="banner">
-      <h1>Discover Your Signature Scent</h1>
-      <p>Explore SaffCoZ’s newest and discounted perfumes.</p>
-    </section>
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+      <div class="error" id="emailError"></div>
 
-    <section class="best-sellers">
-      <h2>Best Sellers</h2>
-      <div class="products">
-        <div class="product-card">
-          <img src="images/bestseller1.jpg" alt="Perfume 1">
-          <h3>Luxury Perfume</h3>
-          <p>Long-lasting fragrance with a bold scent.</p>
-        </div>
-        <div class="product-card">
-          <img src="images/bestseller2.jpg" alt="Perfume 2">
-          <h3>Elegant Bloom</h3>
-          <p>A sweet and floral aroma for every occasion.</p>
-        </div>
-        <div class="product-card">
-          <img src="images/bestseller3.jpg" alt="Perfume 3">
-          <h3>Ocean Mist</h3>
-          <p>Fresh and clean, inspired by the sea.</p>
-        </div>
+      <label for="phone">Phone Number:</label>
+      <input type="number" id="phone" name="phone" placeholder="Enter your phone number">
+      <div class="error" id="phoneError"></div>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+      <div class="error" id="genderError"></div>
+
+      <label>
+        <input type="checkbox" id="subscribe" name="subscribe">
+        I want to receive the latest news, exclusive offers, and new product releases.
+      </label>
+      <div class="error" id="subscribeError"></div>
+
+      <button type="button" onclick="validateForm()">Submit</button>
+    </form>
+  </div>
+  <script src="scripts.js"></script>
+ 
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="assets/logo.png" alt="SaffCoZ Logo">
       </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2024 SaffCoZ. All rights reserved.</p>
+  
+      <div class="footer-socials">
+        <a href="#" aria-label="Facebook">
+          <img src="assets/facebook-logo.jpg" alt="Facebook">
+        </a>
+        <a href="#" aria-label="Instagram">
+          <img src="assets/instagram-logo.png" alt="Instagram">
+        </a>
+        <a href="#" aria-label="Twitter">
+          <img src="assets/twitter-logo.png" alt="X">
+        </a>
+        <a href="#" aria-label="YouTube">
+          <img src="assets/youtube-logo.png" alt="YouTube">
+        </a>
+      </div>
+  
+      <div class="footer-text">
+        <p>&copy; 2024 SaffCoZ. All rights reserved.</p>
+        <p>Designed with love and attention to detail.</p>
+      </div>
+    </div>
   </footer>
+  
 
-  <script src="js/script.js"></script>
+  <script src="js/javascript.js"></script>
 </body>
 </html>
